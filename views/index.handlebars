@@ -1,0 +1,64 @@
+<div class="container">
+
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form>
+                <div class="form-group">
+                    <label>Burger Name</label>
+                    <input id="burger-name" type="text" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+
+                <button id="burger-submit" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 not-devoured">
+
+            {{#each hbObj}}
+            {{#unless this.devoured}}
+
+
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{this.burger_name}}</h5>
+                    <button data-id={{this.id}} class="devour" type="submit" class="btn btn-primary">Devour</button>
+
+                </div>
+            </div>
+            {{/unless}}
+            {{/each}}
+        </div>
+        <div class="col-md-6 devoured">
+            {{#each hbObj}}
+            {{#if this.devoured}}
+
+
+            <div class="card" style="width: 18rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title">{{this.burger_name}}</h5>
+
+                </div>
+            </div>
+            {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>

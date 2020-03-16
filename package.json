@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/edgarrms/Node-handlebars-hw.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com//Node-handlebars-hw/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/edgarrms/Node-handlebars-hw#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",

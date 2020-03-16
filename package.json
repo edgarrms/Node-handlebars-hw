@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Justin-Singh125125/burgerApp.git"
+    "url": ""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Justin-Singh125125/burgerApp/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/Justin-Singh125125/burgerApp#readme",
+  "homepage": "",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
